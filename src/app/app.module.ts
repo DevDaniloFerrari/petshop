@@ -1,3 +1,4 @@
+import { FramePageComponent } from './pages/master/frame.page';
 import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
 import { ProductsPageComponent } from './pages/store/products-page/products-page.component';
 import { PetsPageComponent } from './pages/account/pets-page/pets-page.component';
@@ -19,7 +20,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     LoginPageComponent,
     PetsPageComponent,
     ProductsPageComponent,
-    CartPageComponent
+    CartPageComponent,
+    FramePageComponent
   ],
   imports: [
     BrowserModule,
