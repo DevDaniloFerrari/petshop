@@ -7,9 +7,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
+  public url = 'http://localhost:3002/v1'
+
   constructor(private http: HttpClient) { }
 
   getProdutcs() {
-    return this.http.get<Product[]>('http://localhost:3002/v1/products')
+    return this.http.get<Product[]>(`${this.url}/products`);
+  }
+
+  authenticate(data) {
+    return this.http.post(`${this.url}/accounts/authenticate`, data);
   }
 }
