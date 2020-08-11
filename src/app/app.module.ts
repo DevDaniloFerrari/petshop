@@ -8,6 +8,7 @@ import { ResetPasswordPageComponent } from './pages/account/reset-password-page/
 import { LoginPageComponent } from './pages/account/login-page/login-page.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -29,6 +30,7 @@ import { ProductCardComponent } from './app/components/store/product-card/produc
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     HttpClientModule,
     AppRoutingModule
   ],
