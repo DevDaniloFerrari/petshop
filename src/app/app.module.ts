@@ -1,4 +1,4 @@
-import { NavbarComponent } from './app/components/shared/navbar/navbar.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { DataService } from './services/data.service';
 import { FramePageComponent } from './pages/master/frame.page';
 import { CartPageComponent } from './pages/store/cart-page/cart-page.component';
@@ -13,7 +13,8 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductCardComponent } from './app/components/store/product-card/product-card.component';
+import { ProductCardComponent } from './components/store/product-card/product-card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProductCardComponent } from './app/components/store/product-card/produc
     ProductsPageComponent,
     CartPageComponent,
     FramePageComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
