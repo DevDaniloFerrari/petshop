@@ -1,3 +1,4 @@
+import { MaskDirective } from './directives/mask.directive';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { DataService } from './services/data.service';
 import { FramePageComponent } from './pages/master/frame.page';
@@ -18,6 +19,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
 
 @NgModule({
   declarations: [
+    MaskDirective,
     AppComponent,
     NavbarComponent,
     LoginPageComponent,
