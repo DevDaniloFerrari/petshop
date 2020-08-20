@@ -1,3 +1,4 @@
+import { AuthService } from './services/auth.service';
 import { MaskDirective } from './directives/mask.directive';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { DataService } from './services/data.service';
@@ -38,7 +39,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [DataService],
+  providers: [DataService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
