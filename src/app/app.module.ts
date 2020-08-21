@@ -20,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductCardComponent } from './components/store/product-card/product-card.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { ProfilePageComponent } from './pages/account/profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     CartPageComponent,
     FramePageComponent,
     ProductCardComponent,
-    LoadingComponent
+    LoadingComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
